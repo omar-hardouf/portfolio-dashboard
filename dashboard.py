@@ -1,3 +1,7 @@
+import os
+OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "outputs")
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
@@ -72,7 +76,7 @@ def build_dashboard(prices):
     )
 
     fig.show()
-    fig.write_html("dashboard.html")
+    fig.write_html(os.path.join(OUTPUT_DIR, "dashboard.html"))
     print("✓ Dashboard saved to dashboard.html")
 
 if __name__ == "__main__":

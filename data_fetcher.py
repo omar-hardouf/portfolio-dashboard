@@ -41,11 +41,3 @@ if __name__ == "__main__":
     loaded = load_from_db(DB_PATH)
     print("\nPreview:")
     print(loaded.tail())
-
-
-from data_fetcher import load_from_db
-import pandas as pd
-
-df = load_from_db("portfolio.db")
-print(df.columns.tolist())
-print(df.shape)    
