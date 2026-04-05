@@ -17,3 +17,6 @@ pip install yfinance pandas numpy plotly sqlalchemy
 python data_fetcher.py   # fetch and store data
 python metrics.py        # calculate metrics
 python dashboard.py      # launch dashboard
+
+## Dashboard Preview
+![Dashboard](outputs/dashboard_preview.png)
